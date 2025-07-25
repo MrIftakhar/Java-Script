@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add & Remove</title>
+      <style>
+    /* Make body full height and use flexbox */
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center;     /* center vertically */
+      background-color: #f0f0f0; /* optional background */
+    }
+
+    /* Style the form */
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      margin: 10px 0 5px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+    <form>
+        <p>language Name:</p>
+        <input type="text" id="Lang">
+        <button id="btnAdd">Add</button>
+        <br>
+        <br>
+        <p>Framework List:</p>
+        <select id="list" multiple>
+
+        </select>
+        <br>
+        <br>
+        <button id="btnRemove">Remove Selected Framework</button>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
